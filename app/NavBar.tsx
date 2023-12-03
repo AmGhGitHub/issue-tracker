@@ -22,7 +22,7 @@ const NavBar = () => {
         {links.map((link) => (
           <li key={link.href}>
             <Link
-              className={clsx(" hover:text-zinc-800 transition-colors", {
+              className={clsx("hover:text-zinc-800 transition-colors", {
                 "text-zinc-900": currentPath === link.href,
                 "text-zinc-500": currentPath !== link.href,
               })}
